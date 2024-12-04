@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "TechSynergy Project",
   "main": "src/index.js",
-  "homepage": "https://griffin-kimani.github.io/techSynergysol", 
+  "homepage": "https://griffin-kimani.github.io/techSynergysolutions", 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
