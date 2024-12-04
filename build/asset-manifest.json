@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/techSynergysol/static/css/main.279e077c.css",
+    "main.js": "/techSynergysol/static/js/main.09aeb347.js",
+    "static/media/background.jpg": "/techSynergysol/static/media/background.1ff8b98a4ec3a68d2679.jpg",
+    "static/media/istockphoto7.jpg": "/techSynergysol/static/media/istockphoto7.a59679b4cfee0574b6cf.jpg",
+    "static/media/istockphoto6.jpg": "/techSynergysol/static/media/istockphoto6.261106a0d3d81d883c93.jpg",
+    "static/media/pexels.jpg": "/techSynergysol/static/media/pexels.ca27a8671baa9507259f.jpg",
+    "static/media/istockphoto5.avif": "/techSynergysol/static/media/istockphoto5.f835ed6a7380d0705102.avif",
+    "static/media/istockphoto3.jpg": "/techSynergysol/static/media/istockphoto3.bd72e7a7844a70fb9db8.jpg",
+    "static/media/istockphoto1.jpg": "/techSynergysol/static/media/istockphoto1.2f2b86455ada31ff1f40.jpg",
+    "static/media/istockphoto.jpg": "/techSynergysol/static/media/istockphoto.2ce4b795bcb4ebfaa8a0.jpg",
+    "index.html": "/techSynergysol/index.html",
+    "main.279e077c.css.map": "/techSynergysol/static/css/main.279e077c.css.map",
+    "main.09aeb347.js.map": "/techSynergysol/static/js/main.09aeb347.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.279e077c.css",
+    "static/js/main.09aeb347.js"
+  ]
+}
