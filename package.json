@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "TechSynergy Project",
   "main": "src/index.js",
-  "homepage": "https://griffin-kimani.github.io/techSynergysolutions", 
+  "homepage": "https://griffin-kimani.github.io/techSynergysolutions",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test"
   },
