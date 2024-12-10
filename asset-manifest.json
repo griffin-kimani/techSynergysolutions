@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/techSynergysolutions/static/css/main.4eca7e8e.css",
-    "main.js": "/techSynergysolutions/static/js/main.9afc1270.js",
-    "static/media/background.jpg": "/techSynergysolutions/static/media/background.1ff8b98a4ec3a68d2679.jpg",
-    "static/media/istockphoto7.jpg": "/techSynergysolutions/static/media/istockphoto7.a59679b4cfee0574b6cf.jpg",
-    "static/media/istockphoto6.jpg": "/techSynergysolutions/static/media/istockphoto6.261106a0d3d81d883c93.jpg",
-    "static/media/pexels.jpg": "/techSynergysolutions/static/media/pexels.ca27a8671baa9507259f.jpg",
-    "static/media/istockphoto5.avif": "/techSynergysolutions/static/media/istockphoto5.f835ed6a7380d0705102.avif",
-    "static/media/istockphoto3.jpg": "/techSynergysolutions/static/media/istockphoto3.bd72e7a7844a70fb9db8.jpg",
-    "static/media/istockphoto1.jpg": "/techSynergysolutions/static/media/istockphoto1.2f2b86455ada31ff1f40.jpg",
-    "static/media/istockphoto.jpg": "/techSynergysolutions/static/media/istockphoto.2ce4b795bcb4ebfaa8a0.jpg",
-    "index.html": "/techSynergysolutions/index.html",
-    "main.4eca7e8e.css.map": "/techSynergysolutions/static/css/main.4eca7e8e.css.map",
-    "main.9afc1270.js.map": "/techSynergysolutions/static/js/main.9afc1270.js.map"
+    "main.css": "/TechSynergysolutions/static/css/main.8cf232f5.css",
+    "main.js": "/TechSynergysolutions/static/js/main.44988c31.js",
+    "static/media/background.jpg": "/TechSynergysolutions/static/media/background.1ff8b98a4ec3a68d2679.jpg",
+    "static/media/istockphoto7.jpg": "/TechSynergysolutions/static/media/istockphoto7.a59679b4cfee0574b6cf.jpg",
+    "static/media/istockphoto6.jpg": "/TechSynergysolutions/static/media/istockphoto6.261106a0d3d81d883c93.jpg",
+    "static/media/pexels.jpg": "/TechSynergysolutions/static/media/pexels.ca27a8671baa9507259f.jpg",
+    "static/media/istockphoto5.avif": "/TechSynergysolutions/static/media/istockphoto5.f835ed6a7380d0705102.avif",
+    "static/media/istockphoto3.jpg": "/TechSynergysolutions/static/media/istockphoto3.bd72e7a7844a70fb9db8.jpg",
+    "static/media/istockphoto1.jpg": "/TechSynergysolutions/static/media/istockphoto1.2f2b86455ada31ff1f40.jpg",
+    "static/media/istockphoto.jpg": "/TechSynergysolutions/static/media/istockphoto.2ce4b795bcb4ebfaa8a0.jpg",
+    "index.html": "/TechSynergysolutions/index.html",
+    "main.8cf232f5.css.map": "/TechSynergysolutions/static/css/main.8cf232f5.css.map",
+    "main.44988c31.js.map": "/TechSynergysolutions/static/js/main.44988c31.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eca7e8e.css",
-    "static/js/main.9afc1270.js"
+    "static/css/main.8cf232f5.css",
+    "static/js/main.44988c31.js"
   ]
 }
