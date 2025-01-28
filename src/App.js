@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Header, Footer } from './containers';
 import {
   Navbar,
@@ -10,51 +10,33 @@ import {
   Contactus,
 } from './components';
 
+const HomePage = () => (
+  <>
+    <Header />
+    <Navbar />
+    <About />
+    <Services />
+    <Chatbot />
+    <Contactus />
+    <Footer />
+  </>
+);
+
+const TalkToUsPage = () => (
+  <>
+    <Talktous />
+    <Footer />
+  </>
+);
+
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Navbar />
-              <About />
-              <Services />
-              <Chatbot />
-              <Contactus />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/techSynergysol"
-          element={    
-                   <>
-              <Header />
-              <Navbar />
-              <About />
-              <Services />
-              <Chatbot />
-              <Contactus />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/talktous"
-          element={
-            <>
-              <Talktous />
-              <Footer />
-            </>
-          }
-        />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/talktous" element={<TalkToUsPage />} />
+      {/* Redirect unmatched routes to the homepage */}
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
   );
 };
 
