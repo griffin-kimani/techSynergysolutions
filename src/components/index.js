@@ -4,3 +4,4 @@ export { default as Contactus } from './contactus/Contactus';
 export { default as Navbar } from './navbar/Navbar';
 export { default as Talktous } from './talktous/Talktous';
 export { default as Chatbot } from './chatbot/Chatbot';
+export { default as Homepage } from './homepage/Homepage';

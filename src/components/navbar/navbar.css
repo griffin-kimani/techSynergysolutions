@@ -13,7 +13,6 @@
   overflow: hidden;
 }
 
-
 .navbar {
   display: flex;
   align-items: center;
@@ -26,15 +25,15 @@
   left: 0;
   right: 0;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.7); 
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; 
-  border-radius: 0 0 10px 10px; 
-  box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.1); 
+  background: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.1);
 }
 
 .navbar.talktous-navbar {
-  background-color: #01214b; 
-  height: 40px; 
+  background-color: #01214b;
+  height: 40px;
   justify-content: space-between;
   padding: 35px 50px;
   margin-bottom: 200px;
@@ -60,29 +59,26 @@
   color: #ccc;
 }
 
-
 .navbar.scrolled {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
 }
-
 
 .navbar-logo img {
   height: 40px;
 }
 
 .home-link {
-  height: 40px;
   margin-left: 90px;
- 
 }
-
 
 .home-link a {
   color: #07ada5;
   text-decoration: none;
   font-weight: 1000;
   font-size: 1.5rem;
-  padding: 100px 50px;
+  padding: 10px 15px; /* Adjusted padding for a more balanced look */
   transition: color 0.3s ease;
 }
 
@@ -93,7 +89,14 @@
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 150px;
+  gap: 30px; /* Reduced gap for better alignment */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .navbar-links a {
@@ -101,7 +104,7 @@
   text-decoration: none;
   font-weight: 1000;
   font-size: 1rem;
-  padding: 10px 40px;
+  padding: 10px 15px; /* Reduced padding for a compact appearance */
   transition: color 0.3s ease;
   background-color: transparent;
 }
@@ -206,17 +209,6 @@
   }
 }
 
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -228,13 +220,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1268px) {
   .section {
-    height: 50vh; 
+    height: 50vh;
   }
 
   .navbar {
-    padding: 5px 15px; 
+    padding: 5px 15px;
   }
 
   .navbar-links {
@@ -246,8 +238,8 @@
   }
 
   .hero-text h1 {
-    font-size: 1rem; 
-    letter-spacing: 3px; 
+    font-size: 1rem;
+    letter-spacing: 3px;
   }
 
   .hero-text p {
@@ -258,7 +250,7 @@
   .cta-button {
     padding: 10px 20px;
     font-size: 1rem;
-    width: 100%; 
+    width: 100%;
   }
 
   .home-link {
@@ -266,7 +258,7 @@
   }
 
   .navbar-logo img {
-    height: 10px; 
+    height: 10px;
   }
 }
 
@@ -274,7 +266,7 @@
 @media (max-width: 200px) {
   .hero-text h1 {
     font-size: 1.8rem;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
   }
 
   .hero-text p {

@@ -14,10 +14,16 @@ const HomePage = () => (
   <>
     <Header />
     <Navbar />
-    <About />
-    <Services />
+    <div id="about">
+      <About />
+    </div>
+    <div id="services">
+      <Services />
+    </div>
     <Chatbot />
-    <Contactus />
+    <div id="contactus">
+      <Contactus />
+    </div>
     <Footer />
   </>
 );

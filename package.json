@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "homepage": "https://griffin-kimani.github.io/techSynergysolutions",
   "scripts": {
-    "start": "GENERATE_SOURCEMAP=false react-scripts start",
+    "start": "set \"GENERATE_SOURCEMAP=false\" && react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
