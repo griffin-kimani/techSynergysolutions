@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/techSynergysolutions/static/css/main.4eca7e8e.css",
-    "main.js": "/techSynergysolutions/static/js/main.ed8d81e2.js",
+    "main.css": "/techSynergysolutions/static/css/main.a9f5afdd.css",
+    "main.js": "/techSynergysolutions/static/js/main.772625bc.js",
     "static/media/background.jpg": "/techSynergysolutions/static/media/background.1ff8b98a4ec3a68d2679.jpg",
     "static/media/istockphoto7.jpg": "/techSynergysolutions/static/media/istockphoto7.a59679b4cfee0574b6cf.jpg",
     "static/media/istockphoto6.jpg": "/techSynergysolutions/static/media/istockphoto6.261106a0d3d81d883c93.jpg",
@@ -11,11 +11,11 @@
     "static/media/istockphoto1.jpg": "/techSynergysolutions/static/media/istockphoto1.2f2b86455ada31ff1f40.jpg",
     "static/media/istockphoto.jpg": "/techSynergysolutions/static/media/istockphoto.2ce4b795bcb4ebfaa8a0.jpg",
     "index.html": "/techSynergysolutions/index.html",
-    "main.4eca7e8e.css.map": "/techSynergysolutions/static/css/main.4eca7e8e.css.map",
-    "main.ed8d81e2.js.map": "/techSynergysolutions/static/js/main.ed8d81e2.js.map"
+    "main.a9f5afdd.css.map": "/techSynergysolutions/static/css/main.a9f5afdd.css.map",
+    "main.772625bc.js.map": "/techSynergysolutions/static/js/main.772625bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eca7e8e.css",
-    "static/js/main.ed8d81e2.js"
+    "static/css/main.a9f5afdd.css",
+    "static/js/main.772625bc.js"
   ]
 }
