@@ -8,10 +8,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -21,16 +17,37 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Check if we're on the TalkToUs page
-  const isTalkToUsPage = location.pathname === '/talktous';
-
-  // Smooth scrolling helper
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    // Add event listeners programmatically
+    const homeLink = document.getElementById('home-link');
+    const aboutLink = document.getElementById('about-link');
+    const servicesLink = document.getElementById('services-link');
+    const contactLink = document.getElementById('contact-link');
+    const hamburger = document.getElementById('hamburger-menu');
+
+    if (homeLink) homeLink.addEventListener('click', () => handleScrollToSection('navbar'));
+    if (aboutLink) aboutLink.addEventListener('click', () => handleScrollToSection('about'));
+    if (servicesLink) servicesLink.addEventListener('click', () => handleScrollToSection('services'));
+    if (contactLink) contactLink.addEventListener('click', () => handleScrollToSection('contactus'));
+    if (hamburger) hamburger.addEventListener('click', () => setIsOpen((prev) => !prev));
+
+    return () => {
+      if (homeLink) homeLink.removeEventListener('click', () => handleScrollToSection('navbar'));
+      if (aboutLink) aboutLink.removeEventListener('click', () => handleScrollToSection('about'));
+      if (servicesLink) servicesLink.removeEventListener('click', () => handleScrollToSection('services'));
+      if (contactLink) contactLink.removeEventListener('click', () => handleScrollToSection('contactus'));
+      if (hamburger) hamburger.removeEventListener('click', () => setIsOpen((prev) => !prev));
+    };
+  }, []);
+
+  const isTalkToUsPage = location.pathname === '/talktous';
 
   return (
     <div id="navbar" className="section">
@@ -42,46 +59,18 @@ const Navbar = () => {
         <ul className="navbar-links">
           <li className="home-link">
             {isTalkToUsPage ? (
-              <Link to="/" onClick={() => setTimeout(() => handleScrollToSection('navbar'), 100)}>
-                Home
-              </Link>
+              <Link to="/" id="home-link">Home</Link>
             ) : (
-              <a onClick={() => handleScrollToSection('navbar')}>Home</a>
+              <a id="home-link">Home</a>
             )}
           </li>
-          <li>
-            {isTalkToUsPage ? (
-              <Link to="/" onClick={() => setTimeout(() => handleScrollToSection('about'), 100)}>
-                About
-              </Link>
-            ) : (
-              <a onClick={() => handleScrollToSection('about')}>About</a>
-            )}
-          </li>
-          <li>
-            {isTalkToUsPage ? (
-              <Link to="/" onClick={() => setTimeout(() => handleScrollToSection('services'), 100)}>
-                Services
-              </Link>
-            ) : (
-              <a onClick={() => handleScrollToSection('services')}>Services</a>
-            )}
-          </li>
-          <li>
-            {isTalkToUsPage ? (
-              <Link to="/" onClick={() => setTimeout(() => handleScrollToSection('contactus'), 100)}>
-                Contact Us
-              </Link>
-            ) : (
-              <a onClick={() => handleScrollToSection('contactus')}>Contact Us</a>
-            )}
-          </li>
-          <li>
-            <Link to="/talktous">Talk to Us</Link>
-          </li>
+          <li><a id="about-link">About</a></li>
+          <li><a id="services-link">Services</a></li>
+          <li><a id="contact-link">Contact Us</a></li>
+          <li><Link to="/talktous">Talk to Us</Link></li>
         </ul>
 
-        <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div id="hamburger-menu" className={`hamburger ${isOpen ? 'open' : ''}`}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -91,9 +80,6 @@ const Navbar = () => {
       <div className="hero-text">
         <h1>techSynergy Solutions</h1>
         <p>Your Trusted Technology Partner</p>
-        <a onClick={() => handleScrollToSection('about')} className="cta-button">
-          Learn More
-        </a>
       </div>
     </div>
   );
